@@ -10,7 +10,7 @@ check_env_var "UNIQUE_COMMENT_ID"
 
 REPO_ORG=${GITHUB_REPOSITORY_OWNER}
 REPO_NAME=$(echo "${GITHUB_REPOSITORY}" | cut -d "/" -f2)
-_pr_message=${UNIQUE_COMMENT_ID}
+_pr_message=${COMMENT_MESSAGE}
 
 _pr_comment="./.tmp.pr-comment.txt"
 
@@ -19,7 +19,7 @@ echo ${_pr_message} > "${_pr_comment}"
 comment_on_pull_request "${REPO_ORG}" \
   "${REPO_NAME}" \
   "${PR_NUMBER}" \
-  "${COMMENT_MESSAGE}" \
+  "${_pr_comment}" \
   "true" \
   "unique-comment-id:${UNIQUE_COMMENT_ID}"
 
