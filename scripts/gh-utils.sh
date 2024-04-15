@@ -47,6 +47,6 @@ function comment_on_pull_request() {
   if [[ -z "${_comment_id}" ]]; then
     printf "%s" "$(echo "${_comment_body}")" | gh pr comment "${_pr_number}" -R "${_repo_org}/${_repo_name}" -F -
   else
-    printf "%s \n %s" "$(get_formatted_comment_id "${_comment_id}")" "$(cat "${_comment_body}")" | gh pr comment "${_pr_number}" -R "${_repo_org}/${_repo_name}" -F -
+    printf "%s \n %s" "$(get_formatted_comment_id "${_comment_id}")" "$(echo "${_comment_body}")" | gh pr comment "${_pr_number}" -R "${_repo_org}/${_repo_name}" -F -
   fi
 }
