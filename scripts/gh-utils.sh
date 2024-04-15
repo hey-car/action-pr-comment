@@ -14,7 +14,7 @@ function delete_previous_comments() {
   _nextPage="1"
   while [[ "${_nextPage}" != "0" ]]; do
     _comments="$(gh api "/repos/${_repo_org}/${_repo_name}/issues/${_pr_number}/comments?direction=asc&per_page=20&page=${_nextPage}")"
-    if [[ "$(cat "${_comments}" | jq '.|length')" == 0 ]]; then
+    if [[ "$(echo "${_comments}" | jq '.|length')" == 0 ]]; then
       _nextPage="0"
     else
       _nextPage="$((_nextPage + 1))"
@@ -45,7 +45,7 @@ function comment_on_pull_request() {
 
   log_out "Commenting on ${_repo_org}/${_repo_name}#${_pr_number}"
   if [[ -z "${_comment_id}" ]]; then
-    printf "%s" "$(echo "${_comment_body}")" | gh pr comment "${_pr_number}" -R "${_repo_org}/${_repo_name}" -F -
+    printf "%s" "$(cat "${_comment_body}")" | gh pr comment "${_pr_number}" -R "${_repo_org}/${_repo_name}" -F -
   else
     printf "%s \n %s" "$(get_formatted_comment_id "${_comment_id}")" "$(cat "${_comment_body}")" | gh pr comment "${_pr_number}" -R "${_repo_org}/${_repo_name}" -F -
   fi
