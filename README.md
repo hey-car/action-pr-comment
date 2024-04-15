@@ -1,3 +1,3 @@
-# actions-template
+# action-pr-comment
 
-Template repo for github actions
+Action for comment on PRs
