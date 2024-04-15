@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.5](https://github.com/hey-car/action-pr-comment/compare/v1.0.4...v1.0.5) (2024-04-15)
+
+
+### Bug Fixes
+
+* logic in script ([#7](https://github.com/hey-car/action-pr-comment/issues/7)) ([0e5876e](https://github.com/hey-car/action-pr-comment/commit/0e5876e2d5b2d47571bb4df7bfda61894981302c))
+
 ### [1.0.4](https://github.com/hey-car/action-pr-comment/compare/v1.0.3...v1.0.4) (2024-04-15)
 
 
