@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.2](https://github.com/hey-car/action-pr-comment/compare/v1.0.1...v1.0.2) (2024-04-15)
+
+
+### Bug Fixes
+
+* variable name ([#3](https://github.com/hey-car/action-pr-comment/issues/3)) ([1bb7ae6](https://github.com/hey-car/action-pr-comment/commit/1bb7ae616baa6a31d99c84ac854c39d8ab4446df))
+
 ### [1.0.1](https://github.com/hey-car/action-pr-comment/compare/v1.0.0...v1.0.1) (2024-04-15)
 
 
