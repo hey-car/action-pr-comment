@@ -23,4 +23,4 @@ comment_on_pull_request "${REPO_ORG}" \
   "true" \
   "unique-comment-id:${UNIQUE_COMMENT_ID}"
 
-rm "${COMMENT_MESSAGE}"
+rm "${_pr_comment}"
