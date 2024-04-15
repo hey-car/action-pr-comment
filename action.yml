@@ -21,10 +21,10 @@ inputs:
   pr-number:
     description: The current pull request number
     required: true
-  comment_message:
+  comment-message:
     description: The comment to post on the PR
     required: true
-  unique_comment_id:
+  unique-comment-id:
     description: The unique id to use for the comment
     required: true
 
@@ -46,5 +46,5 @@ runs:
         LOG_LEVEL: ${{ inputs.log-level }}
         LOG_TIMESTAMPED: ${{ inputs.log-timestamped }}
         PR_NUMBER: ${{ inputs.pr-number }}
-        COMMENT_MESSAGE: ${{ inputs.comment_message }}
-        UNIQUE_COMMENT_ID: ${{ inputs.unique_comment_id }}
+        COMMENT_MESSAGE: ${{ inputs.comment-message }}
+        UNIQUE_COMMENT_ID: ${{ inputs.unique-comment-id }}
