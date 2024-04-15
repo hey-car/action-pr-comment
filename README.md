@@ -1,3 +1,3 @@
 # action-pr-comment
 
-Action for comment on PRs
+Action for post a comment on PR
