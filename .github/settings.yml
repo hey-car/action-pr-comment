@@ -1,8 +1,8 @@
 ---
 repository:
-  name: actions-template
+  name: action-pr-comment
   description: |
-    A Github template repo for public Gh Actions
+    A Github repo for pr comment public Gh Actions
   topics: github, actions, ci, scripts
   default_branch: master
   private: true
