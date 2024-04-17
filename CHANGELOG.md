@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.1.1](https://github.com/hey-car/action-pr-comment/compare/v1.1.0...v1.1.1) (2024-04-17)
+
+
+### Bug Fixes
+
+* fixed trigger condition on prs ([#12](https://github.com/hey-car/action-pr-comment/issues/12)) ([8341c29](https://github.com/hey-car/action-pr-comment/commit/8341c2921a660b20318a1a57ac7a4a12d3619263))
+
 ## [1.1.0](https://github.com/hey-car/action-pr-comment/compare/v1.0.8...v1.1.0) (2024-04-17)
 
 
