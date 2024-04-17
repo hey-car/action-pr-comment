@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/hey-car/action-pr-comment/compare/v1.0.8...v1.1.0) (2024-04-17)
+
+
+### Features
+
+* **TECH:** major version tag ([#11](https://github.com/hey-car/action-pr-comment/issues/11)) ([543d725](https://github.com/hey-car/action-pr-comment/commit/543d725c7eafb861901e064d5840934ec3a206ca))
+
 ### [1.0.8](https://github.com/hey-car/action-pr-comment/compare/v1.0.7...v1.0.8) (2024-04-15)
 
 
