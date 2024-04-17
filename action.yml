@@ -32,13 +32,11 @@ runs:
   using: 'composite'
   steps:
     - name: setup
-      if: github.event_name == 'pull_request'
       shell: bash
       id: setup
       run: |
         echo "scripts-path=${GITHUB_ACTION_PATH}" >>"${GITHUB_OUTPUT}"
     - name: PR Comment
-      if: github.event_name == 'pull_request'
       run: '${{ steps.setup.outputs.scripts-path }}/scripts/script.sh'
       shell: bash
       env:
