@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.1.2](https://github.com/hey-car/action-pr-comment/compare/v1.1.1...v1.1.2) (2024-04-18)
+
+
+### Bug Fixes
+
+* exit on error in gh command ([#13](https://github.com/hey-car/action-pr-comment/issues/13)) ([84a6cca](https://github.com/hey-car/action-pr-comment/commit/84a6cca6ce13fc8494e010b63ef962335357d7ef))
+
 ### [1.1.1](https://github.com/hey-car/action-pr-comment/compare/v1.1.0...v1.1.1) (2024-04-17)
 
 
